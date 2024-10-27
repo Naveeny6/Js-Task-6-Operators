@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        console.log("Question-1:-")
+        let num1 = parseInt(prompt("Enter first number: "))
+        let num2 = parseInt(prompt("Enter second number: "))
+        console.log(`First Number:`,num1)
+        console.log(`Second Number:`,num2)
+
+        console.log(`Addition of two numbers: ${num1 + num2}`)
+        console.log(`Subraction of two numbers: ${num1 - num2}`)
+        console.log(`Multiplication of two numbers: ${num1 * num2}`)
+        console.log(`Division of two numbers: ${num1 / num2}`)
+        console.log(`comparing two numbers using > operators: ${num1 > num2}`)
+        console.log(`comparing two numbers using < operators: ${num1 < num2}`)
+        console.log(`comparing two numbers using == operators: ${num1 == num2}`)
+        console.log(`updated value of first number after adding 5 to it: ${num1+=5} `)
+
+        console.log("Question-2:-")
+        let firstName = prompt("Enter First Name: ")
+        let lastName = prompt("Enter Last Name: ")
+        let age = parseInt(prompt("Enter your age: "))
+        let fullName = firstName+" "+lastName
+        console.log(`Full-Name:`,fullName);
+
+        (age>18) ? console.log("Your are eligilbe for vote") : console.log("Your are not eligible");
+
+        console.log("Question-3:-")
+        let num = parseInt(prompt("Enter a number: "))
+        let mod = num % 2
+        let mul = num ** 2
+
+        console.log(`modulus of number ${mod}`);
+        console.log(`exponentiation of number ${mul}`);
+
+        (num > 50) ? console.log(num, "Number is Greater than 50") :
+        (num < 50) ? console.log(num, "Number is Less than 50") : console.log(num, "Number is equal to 50");
+
+        (num % 1) ? console.log("Number is even") : console.log("Number is Odd")
+
+        console.log("Question-4:-")
+        let number1 = parseInt(prompt("Enter first number:"))
+        let number2 = parseInt(prompt("Enter second number:"))
+        let number3 = parseInt(prompt("Enter third number:"))
+
+        let FirstTwoSum = (`Sum of two numbers:${number1 + number2}`)
+        console.log(`Sum of two numbers ${FirstTwoSum}`)
+        console.log(FirstTwoSum == number3);
+
+        (FirstTwoSum > 50 && number3 > 100) ? console.log("sum of the first two numbers is greater than 50 and the third number is greater than 100") : console.log("sum of the first two numbers is not greater than 50 and the third number not greater than 100")
+
+        console.log("Question-5:-")
+
+        let firstName2 = prompt("Enter First Name: ")
+        let lastName2 = prompt("Enter second Name: ")
+        let n = parseInt(prompt("Enter a number: "))
+
+        let fullName2 = firstName2+" "+lastName2
+        console.log(`FullName: ${fullName2}`);
+        console.log(n);
+        console.log(`Type of Number: ${typeof n}`)
+        n+=10
+        console.log(`Updated Number: ${n}`)
+
+        console.log("Question-6:-")
+
+        let totalAmount = parseInt(prompt("Enter a amount: "));
+
+        let numb = 15;
+        let dis = totalAmount / numb;
+
+        console.log(`totalAmount is ${totalAmount}`);
+        console.log(`discount is ${dis}`);
+
+        (totalAmount > 150) ? console.log(`you will get 15%discount = ${dis}`) : console.log("your totalAmount was lessthan 150, you will not gediscount");
+        console.log(`the total amount you would pay after applying discount is ${totalAmount - dis}`);
+
+        console.log("Question-7:-")
+
+        let sentence=prompt("enter the sentece : ")
+        let a=sentence
+        console.log(a);
+        resen=a.split("").reverse().join("");
+        console.log(`this is a reversed sentence = ${resen}`);
+        console.log(`checking the if the reversed string has 15 charecters =  ${resen.length>15}`);
+        (a.length || resen.length) ? console.log("original sentence has conatin more than 20 char") : console.log("original sentence has not  conatin more than 20 char");
+        
+
+        console.log("Question-8:-")
+
+        let numb1=parseInt(prompt("enter the first number :"));
+        let numb2=parseInt(prompt("enter the first number :"));
+        console.log(numb1);
+        console.log(numb2);
+        console.log(`bitwise & operation of two number is = ${numb1 & numb2} `)
+        console.log(`bitwise | operation of two number is = ${numb1 | numb2} `)
+        console.log(`bitwise ^ operation of two number is = ${numb1 ^ numb2} `)
+        console.log(`bitwise << left shit operation of two number is = ${numb1 << 2} `)
+        console.log(`bitwise >> right shift operation of two number is = ${numb1 >> 2} `)
+
+        console.log("Question-9:-")
+
+        let agee=parseInt(prompt("enter the age : "));
+        let salary=parseInt(prompt("enter salary :"));
+        let credit_card_score=parseInt(prompt("enter the credit card score :"));
+        console.log(agee);
+        console.log(salary);
+        console.log(credit_card_score);
+        (agee>=21 && salary>30000 || credit_card_score>650) ? console.log("the person is approved for credit card") : console.log("the person is denied for credit card");
+
+        console.log("Question-10:-")
+
+        let score1=parseInt(prompt("enter first score  : "))
+        let score2=parseInt(prompt("enter first score  : "))
+        let score3=parseInt(prompt("enter first score  : "))
+        console.log(score1);
+        console.log(score2);
+        console.log(score3);
+        let totalScore=score1+score2+score3;
+        console.log(totalScore);
+        (totalScore>60) ? console.log("student is passed") : console.log("student is failed")
+        totalScore+=5;
+        console.log(totalScore);
+        (totalScore>60) ? console.log("student is passed") : console.log("student is failed");
+
+
+    </script>
+
+</body>
+
+</html>
